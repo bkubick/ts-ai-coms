@@ -1,9 +1,9 @@
 {
-  "name": "startup-idea-generator",
+  "name": "ts-ai-coms",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
-  "description": "Startup Idea Generator",
+  "description": "A TypeScript library for AI communications and models",
   "dependencies": {
     "axios": "^0.21.4"
   },
