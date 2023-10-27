@@ -1,0 +1,12 @@
+{
+  "name": "startup-idea-generator",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Startup Idea Generator",
+  "dependencies": {
+    "axios": "^0.21.4"
+  },
+  "scripts": {},
+  "eslintConfig": {}
+}
