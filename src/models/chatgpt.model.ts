@@ -64,6 +64,8 @@ interface GPTResponseData {
 /**
  * The GPT chatbot.
  * 
+ * TODO: Add conversation continuation.
+ * 
  * @private_property url The url for the GPT chatbot.
  * @private_property token The api token for the GPT chatbot.
  * 
@@ -89,7 +91,7 @@ class ChatGPT {
     /**
      * Generates a request for the GPT chatbot.
      * 
-     * @param promp The prompt to send to the GPT chatbot.
+     * @param prompt The prompt to send to the GPT chatbot.
      * @param model The model to use for the GPT chatbot.
      * @param temperature The temperature to use for the GPT chatbot (0-1).
      * @returns The generated request.
@@ -128,6 +130,8 @@ class ChatGPT {
         const response = await axios.post<GPTResponseData>(
             this.url, request.data, { headers: request.headers }
         );
+
+        // TODO: Add Error handling
 
         return response.data;
     }
